@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WCLN - Arithmetic Sequence</title>
+    <meta charset="utf-8" />
+
+    <!--    WCLN Favicon-->
+    <link rel="shortcut icon" href="../../images/favicon.ico" />
+    <link rel="stylesheet" href="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.css">
+    <script src="https://bclearningnetwork.com/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../../lib/createjs.min.js"></script>
+    <script src="../../lib/ColorPlugin.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body onload="init();">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8" id="game">
+        <canvas id="gameCanvas" width="400" height="400">
+    		    <!-- game will be rendered here -->
+    	   </canvas>
+       </div>
+      <div class="col-xs-4 text-left" id="controls">
+        <img src="../../images/logo.png" id="logo">
+        <h1>Arithmetic Sequences</h1>
+        <label id="label-a1">a<sub><i>1</i></sub></label>
+        <input type="range" min="-80" max="80" value="0" id="range-a1">
+        <label id="label-d">d</label>
+        <input type="range" min="-80" max="80" value="10" id="range-d">
+        <label id="label-n">n</label>
+        <input type="range" min="1" max="15" value="10" id="range-n">
+
+        <p id="equation">a<sub><i>n</i></sub> = <span id="span-a1">a<sub><i>1</i></sub></span> + (<span id="span-n">n</span> - 1)<span id="span-d">d</span></p>
+        <p id="equation-values">a<sub><i>n</i></sub> = <span id="span-a1">a<sub>1</sub></span> + (<span id="span-n">n</span> - 1)(<span id="span-d">d</span>)</p>
+        <!-- <p><b>Instructions:</b> Drag the sliders to affect the formula and draw the associated parabola.</p> -->
+      </div>
+  </div>
+  <!-- <div class="row">
+    <div class="text-center" id="degree">
+      <p>Degree = 1</p>
+    </div>
+  </div> -->
+  </div>
+</body>
+</html>
