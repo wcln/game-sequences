@@ -7,7 +7,6 @@ var GRID_SIZE = 22;
 
 var drawings = [];
 
-
 /*
  * Initialize the stage and some createJS settings
  */
@@ -29,7 +28,6 @@ function init() {
 
     stage.update();
 }
-
 
 /*
  * Place graphics and add them to the stage.
@@ -66,7 +64,6 @@ function initListeners() {
   }
 }
 
-
 function drawSequence() {
 
   for (drawing of drawings) {
@@ -74,9 +71,6 @@ function drawSequence() {
   }
 
   drawings = [];
-
-
-
 
   for (var i = 1; i <= n; i++) {
     let ai = a1 + ((i - 1) * d);
@@ -88,10 +82,7 @@ function drawSequence() {
     drawings.push(circle);
     stage.addChild(circle);
   }
-
-
   stage.update();
-
 }
 
 function update() {
@@ -112,7 +103,6 @@ function setupManifest() {
     }
   ];
 }
-
 
 function startPreload() {
     preload = new createjs.LoadQueue(true);
