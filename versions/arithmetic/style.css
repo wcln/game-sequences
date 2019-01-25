@@ -77,6 +77,10 @@ input[type='range'] {
   transition: opacity .2s;
 }
 
+input[type='range']::-moz-range-track {
+  visibility: hidden;
+}
+
 input[type='range']:hover {
   opacity: 1;
 }
