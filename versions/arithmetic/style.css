@@ -56,10 +56,10 @@ h1 {
 }
 
 #logo {
-	float: right;
-	height: 25px;
+	height: 30px;
 	position: absolute;
-	right: 0;
+	right: 4px;
+	bottom: 4px;
 }
 
 #degree {
