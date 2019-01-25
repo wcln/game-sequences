@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WCLN - Geometric Sequence</title>
+    <meta charset="utf-8" />
+
+    <!--    WCLN Favicon-->
+    <link rel="shortcut icon" href="../../images/favicon.ico" />
+    <link rel="stylesheet" href="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.css">
+    <script src="https://bclearningnetwork.com/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../../lib/createjs.min.js"></script>
+    <script src="../../lib/ColorPlugin.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body onload="init();">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8" id="game">
+        <canvas id="gameCanvas" width="400" height="400">
+    		    <!-- game will be rendered here -->
+    	   </canvas>
+       </div>
+      <div class="col-xs-4 text-left" id="controls">
+        <img src="../../images/logo.png" id="logo">
+        <h1>Geometric Sequences</h1>
+        <label>First term <span id="label-a1">a<sub><i>1</i></sub></span></label>
+        <input type="range" min="-80" max="80" value="0" id="range-a1">
+        <label >Common ratio <span id="label-r">r</span></label>
+        <input type="range" min="-80" max="80" value="10" id="range-r">
+        <label ><span id="label-n">n</span></label>
+        <input type="range" min="1" max="15" value="10" id="range-n">
+
+        <p id="equation">a<sub><i><span id="span-n">n</span></i></sub> = <span id="span-a1">a<sub><i>1</i></sub></span> &#8901; <span id="span-r">r</span><sup><i><span id="span-n">n</span> - 1</sup></i></p>
+        <p id="equation-values">a<sub><i><span id="span-n">n</span></i></sub> = <span id="span-a1">a<sub><i>1</i></sub></span> &#8901; <span id="span-r">r</span><sup><i><span id="span-n">n</span> - 1</sup></i></p>
+        <!-- <p><b>Instructions:</b> Drag the sliders to affect the formula and draw the associated parabola.</p> -->
+      </div>
+  </div>
+  <!-- <div class="row">
+    <div class="text-center" id="degree">
+      <p>Degree = 1</p>
+    </div>
+  </div> -->
+  </div>
+</body>
+</html>
