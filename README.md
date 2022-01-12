@@ -1,1 +1,1 @@
-# wcln-game_sequences
+# Sequences Game
